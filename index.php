@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
+    <form action="initiateStk.php" method="POST">
         <img src="mpesa.png" class="img-fluid.max-width = 100%" alt="M-pesa Logo" height="180px" width="265px"><br>
         <label for="telephone">Phone Number:</label>
         <div class="form-group">
@@ -21,7 +21,7 @@
             <input type="number" name="amount" id="">
         </div>
         <div class="form-group">
-        <button type="submit"><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</button>
+        <button type="submit" name="submit"><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</button>
         </div>
         <i class="fa-brands fa-github"></i>
         <i class="fa-brands fa-twitter"></i>
