@@ -15,7 +15,7 @@ $accountRef = "9238";
 $transcript = "Donation Funds";
 $amount = $_POST['amount'];
 
-$timestamp = date(YmdHis);
+$timestamp = date("Y.m.d.H.i.s");
 
 $password = base64_encode($businessShortCode.$passKey.$timestamp);
 
