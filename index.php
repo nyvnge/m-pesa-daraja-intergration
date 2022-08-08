@@ -21,7 +21,7 @@
             <input type="number" name="amount" id="">
         </div>
         <div class="form-group">
-        <button type="submit" name="submit"><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</button>
+        <button type="submit" name="submit" value="submit"><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</button>
         </div>
         <i class="fa-brands fa-github"></i>
         <i class="fa-brands fa-twitter"></i>
