@@ -14,7 +14,7 @@
         <img src="mpesa.png" class="img-fluid.max-width = 100%" alt="M-pesa Logo" height="180px" width="265px"><br>
         <label for="telephone">Phone Number:</label>
         <div class="form-group">
-            <input type="tel" name="phoneNumber" id="">
+            <input type="text" name="phoneNumber" id="">
         </div>
         <label for="Amount">Amount:</label>
         <div class="form-group">
@@ -23,10 +23,12 @@
         <div class="form-group">
         <button type="submit" name="submit" value="submit"><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</button>
         </div>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-solid fa-envelope"></i>
+        <div class="social-menu">
+            <a href="github.com/SandersonNyange" style="color: black;"><i class="fa-brands fa-github"></i></a>
+            <a href="twitter.com/itsnyange" style="color: black;"><i class="fa-brands fa-twitter"></i></a>
+            <a href="instagram.com/itsnyange" style="color: black;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="sandersonnyange@gmail.com" style="color: black;"><i class="fa-solid fa-envelope"></i></a>
+        </div>
     </form>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
