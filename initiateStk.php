@@ -7,17 +7,17 @@ $consumerKey = "4vnt0YCtlrA7gd2xewLiWMqaCfUB5hyK";
 $consumerSecret = "5u25FKQMcwoY3VAv";
 
 
-$businessShortCode = "174379";
-$passKey = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
+$BusinessShortCode = "174379";
+$PassKey = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
 
-$partyA = $_POST['phoneNumber'];
-$accountRef = "9238";
-$transcript = "Donation Funds";
-$amount = $_POST['amount'];
+$PartyA = $_POST['phoneNumber'];
+$AccountReference = "9238";
+$TransactionDesc = "Donation Funds";
+$Amount = $_POST['amount'];
 
-$timestamp = date("YmdHis");
+$Timestamp = date("YmdHis");
 
-$password = base64_encode($businessShortCode.$passKey.$timestamp);
+$Password = base64_encode($BusinessShortCode.$PassKey.$Timestamp);
 
  # header for access token
  $headers = ['Content-Type:application/json; charset=utf8'];
@@ -50,17 +50,17 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, $stkheader); //setting custom header
 
 $curl_post_data = array(
  //Fill in the request parameters with valid values
- 'BusinessShortCode' => $businessShortCode,
- 'Password' => $password,
- 'Timestamp' => $timestamp,
+ 'BusinessShortCode' => $BusinessShortCode,
+ 'Password' => $Password,
+ 'Timestamp' => $Timestamp,
  'TransactionType' => 'CustomerPayBillOnline',
- 'Amount' => $amount,
- 'PartyA' => $partyA,
- 'PartyB' => $businessShortCode,
- 'PhoneNumber' => $partyA,
+ 'Amount' => $Amount,
+ 'PartyA' => $PartyA,
+ 'PartyB' => $BusinessShortCode,
+ 'PhoneNumber' => $PartyA,
  'CallBackURL' => $CallBackURL,
  'AccountReference' => $AccountReference,
- 'TransactionDesc' => $transcript
+ 'TransactionDesc' => $TransactionDesc
 );
 
 $data_string = json_encode($curl_post_data);
