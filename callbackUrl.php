@@ -9,10 +9,10 @@
      // DATA
      $mpesaResponse = file_get_contents('php://input');
  
-     // log the response
+     // log The response
      $logFile = "M_PESAConfirmationResponse.txt";
  
-     // write to file
+     // Write To file
      $log = fopen($logFile, "a");
  
      fwrite($log, $mpesaResponse);
